@@ -69,12 +69,12 @@ const App = () => {
   const [input, setInput] = useState('');    
   const [selected, setSelected] = useState<Country | null>(null);    
   const [color, setColor] = useState('#ffffff');  
-  const[size, setSize] = useState(10);  
+  const[size, setSize] = useState(208);  
   const[prevInput, setPrevInput] = useState("")
   
   const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff'];    
   
-  useEffect(() => {    
+  useEffect(() => {  
     if (data && input.includes('search:')) { 
       let parsed = parseSearchSize(input);    
       const searchTerm = parsed.search
